@@ -24,7 +24,6 @@
 <body>
   <img id="logo" src="https://www.ssaurel.com/cryptocoins/screenshots/web_hi_res_512.png" />
   <div id="data" />
-  <button onclick="parseJson()">Click me</button>
   <script type="text/javascript">
     var xmlhttp = new XMLHttpRequest();
     var url = "https://api.coindesk.com/v1/bpi/currentprice.json";
@@ -41,10 +40,6 @@
     function parseJson(json) {
       var time = "<b>Last Updated : " + json["time"]["updated"] + "</b>";
       var usdValue = "1 BTC equals to $" + json["bpi"]["USD"]["rate"];
-      var gbpValue = "1 BTC equals to &pound;" + json["bpi"]["GBP"]["rate"];
-      var euroValue = "1 BTC equals to &euro;" + json["bpi"]["EUR"]["rate"];
-	  var inrValue = "1 BTC equals to &euro;" + json["bpi"]["EUR"]["rate"];
-	  
 
       document.getElementById("data").innerHTML = time + 
 	       "<br /><br />" + usdValue + 
