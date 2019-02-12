@@ -1,3 +1,5 @@
+https://medium.com/@ssaurel/create-a-bitcoin-price-index-watcher-in-html5-f441b1e05cd1
+
 <html>
 <head>
 <title>Bitcoin Price Index Watcher in HTML5</title>
@@ -42,9 +44,7 @@
       var usdValue = "1 BTC equals to $" + json["bpi"]["USD"]["rate"];
 
       document.getElementById("data").innerHTML = time + 
-	       "<br /><br />" + usdValue + 
-		   "<br />" + gbpValue + 
-		   "<br />" + euroValue;
+	       "<br /><br />" + usdValue;
 }
 </script>
 </body>
