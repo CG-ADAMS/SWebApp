@@ -40,9 +40,14 @@
     function parseJson(json) {
       var time = "<b>Last Updated : " + json["time"]["updated"] + "</b>";
       var usdValue = "1 BTC equals to $" + json["bpi"]["USD"]["rate"];
+	  var gbpValue = "1 BTC equals to &pound;" + json["bpi"]["GBP"]["rate"];
+      var euroValue = "1 BTC equals to &euro;" + json["bpi"]["EUR"]["rate"];
+
 
       document.getElementById("data").innerHTML = time + 
-	       "<br /><br />" + usdValue;
+	       "<br /><br />" + usdValue + 
+		   "<br />" + gbpValue + 
+		   "<br />" + euroValue;
 }
 </script>
 </body>
